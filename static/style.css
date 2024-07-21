@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;  /* Adjusted max-width for better fit */
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the container's width */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #007bff;
+}
+
+form {
+    margin-bottom: 20px; /* Adjusted for space between input and button */
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: calc(100% - 130px);
+    margin-right: 10px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px; /* Add space above the button */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weatherResult, #error {
+    margin-top: 20px;
+}
+
+#weatherResult {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%; /* Ensure it takes the full width of the container */
+    box-sizing: border-box; /* Ensure padding is included in the element's width */
+}
+
+#weatherResult h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+#weatherResult p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#weatherResult #temperature {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#weatherResult #unit {
+    font-size: 1.5em;
+}
+
+#weatherResult #description {
+    font-style: italic;
+    color: #666;
+}
+
+#error {
+    color: red;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
